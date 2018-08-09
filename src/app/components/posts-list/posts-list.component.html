@@ -1,0 +1,10 @@
+<div>
+</div>
+
+<h1>List all post</h1>
+<p *ngIf="isLoading">Loading</p>
+<ul *ngIf="!isLoading">
+  <li *ngFor="let post of posts">
+    {{post.title}} - {{ post.body}}
+  </li>
+</ul>

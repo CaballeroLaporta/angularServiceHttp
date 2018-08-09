@@ -1,0 +1,18 @@
+<h1>Add a post</h1>
+<form (ngSubmit)="submitForm(form)" #form="ngForm">
+
+  <div>
+    <label>title</label>
+    <input type="text" name="title" [(ngModel)]="title" #titleField="ngModel" />
+  </div>
+
+  <div>
+    <label>body</label>
+    <input type="text" name="body" [(ngModel)]="body" #bodyField="ngModel" />
+  </div>
+
+  <div class="field submit">
+    <button type="submit" >Create Post</button>
+  </div>
+</form>
+{{ message }}
